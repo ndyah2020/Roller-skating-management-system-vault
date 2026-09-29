@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Thuc-the-du-lieu/01 - role.md",
+                "file": "05-Thuc-the-du-lieu/12 - enrollment.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - role"
+              "title": "12 - enrollment"
             }
           }
         ]
@@ -194,19 +194,19 @@
   },
   "active": "29df509a6c7d224b",
   "lastOpenFiles": [
+    "05-Thuc-the-du-lieu/11 - medical_note (don't need now).md",
+    "05-Thuc-the-du-lieu/10 - student_guardian.md",
+    "05-Thuc-the-du-lieu/09 - guardian.md",
+    "05-Thuc-the-du-lieu/08 - student.md",
+    "05-Thuc-the-du-lieu/07 - audit_log.md",
+    "05-Thuc-the-du-lieu/06 - venue_time_slot.md",
+    "05-Thuc-the-du-lieu/05 - venue.md",
+    "05-Thuc-the-du-lieu/04 - user.md",
     "05-Thuc-the-du-lieu/03 - role_permission.md",
     "05-Thuc-the-du-lieu/02 - permission.md",
     "05-Thuc-the-du-lieu/01 - role.md",
     "99-Nhap/Danh mục vai trò.md",
     "04-Quyet-dinh/QĐ-14 - Tách permission thành danh mục quyền và bảng nối role_permission.md",
-    "05-Thuc-the-du-lieu/04 - user.md",
-    "05-Thuc-the-du-lieu/05 - venue.md",
-    "05-Thuc-the-du-lieu/06 - venue_time_slot.md",
-    "05-Thuc-the-du-lieu/07 - audit_log.md",
-    "05-Thuc-the-du-lieu/08 - student.md",
-    "05-Thuc-the-du-lieu/09 - guardian.md",
-    "05-Thuc-the-du-lieu/10 - student_guardian.md",
-    "05-Thuc-the-du-lieu/11 - medical_note.md",
     "05-Thuc-the-du-lieu/12 - enrollment.md",
     "05-Thuc-the-du-lieu/13 - course.md",
     "05-Thuc-the-du-lieu/14 - level.md",

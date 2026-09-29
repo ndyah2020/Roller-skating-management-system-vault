@@ -21,12 +21,12 @@ Bảng nối nhiều-nhiều: một phụ huynh có thể có nhiều con, một
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `student_id` | uuid | FK → `student.id` | ✓ | Học viên |
-| `guardian_id` | uuid | FK → `guardian.id` | ✓ | Phụ huynh/người giám hộ |
-| `relationship` | text | — | ✓ | enum: `mother` / `father` / `grandparent` / `other` |
-| `is_payer` | boolean | — | ✓ | Có phải người đóng tiền chính — mặc định `false` |
+| Cột            | Kiểu    | Khoá               | Bắt buộc | Mô tả                                               |
+| -------------- | ------- | ------------------ | -------- | --------------------------------------------------- |
+| `student_id`   | uuid    | FK → `student.id`  | ✓        | Học viên                                            |
+| `guardian_id`  | uuid    | FK → `guardian.id` | ✓        | Phụ huynh/người giám hộ                             |
+| `relationship` | text    | —                  | ✓        | enum: `mother` / `father` / `grandparent` / `other` |
+| `is_payer`     | boolean | —                  | ✓        | Có phải người đóng tiền chính mặc định `false`      |
 
 ## Ràng buộc & chỉ mục
 

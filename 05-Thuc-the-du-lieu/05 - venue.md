@@ -21,12 +21,12 @@ Một dòng = một địa điểm CLB có dạy. **Không có cột sức chứ
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `name` | text | — | ✓ | Tên sân |
-| `address` | text | — | ✓ | Địa chỉ |
-| `status` | text | — | ✓ | enum: `active` / `inactive` — mặc định `active` |
-| `note` | text | — | – | Ghi chú tự do |
+| Cột       | Kiểu | Khoá | Bắt buộc | Mô tả                                           |
+| --------- | ---- | ---- | -------- | ----------------------------------------------- |
+| `name`    | text | —    | ✓        | Tên sân                                         |
+| `address` | text | —    | ✓        | Địa chỉ                                         |
+| `status`  | text | —    | ✓        | enum: `active` / `inactive` — mặc định `active` |
+| `note`    | text | —    | –        | Ghi chú tự do                                   |
 
 ## Ràng buộc & chỉ mục
 

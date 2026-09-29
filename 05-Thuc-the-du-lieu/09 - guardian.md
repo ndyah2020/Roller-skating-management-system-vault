@@ -21,14 +21,13 @@ Một dòng = một phụ huynh/người giám hộ. Người đăng nhập thay
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `full_name` | text | — | ✓ | Họ tên |
-| `phone` | text | — | ✓ | Số điện thoại, duy nhất — dùng để đăng nhập |
-| `zalo` | text | — | – | Số Zalo nhận thông báo, nếu khác `phone` |
-| `email` | text | — | – | Email liên hệ |
-| `address` | text | — | – | Địa chỉ |
-| `occupation` | text | — | – | Nghề nghiệp *(tuỳ chọn, có thể bỏ nếu không dùng)* |
+| Cột         | Kiểu | Khoá | Bắt buộc | Mô tả                                       |
+| ----------- | ---- | ---- | -------- | ------------------------------------------- |
+| `full_name` | text | —    | ✓        | Họ tên                                      |
+| `phone`     | text | —    | ✓        | Số điện thoại, duy nhất — dùng để đăng nhập |
+| `zalo`      | text | —    | –        | Số Zalo nhận thông báo, nếu khác `phone`    |
+| `email`     | text | —    | –        | Email liên hệ                               |
+| `address`   | text | —    | –        | Địa chỉ                                     |
 
 ## Ràng buộc & chỉ mục
 

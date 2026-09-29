@@ -21,14 +21,14 @@ Một dòng = một lần một tài khoản thay đổi dữ liệu tiền ho�
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `user_id` | uuid | FK → `user.id` | ✓ | Ai thao tác |
-| `table_name` | text | — | ✓ | Bảng bị tác động, ví dụ `credit_transaction` |
-| `record_id` | uuid | — | ✓ | Id của dòng bị tác động (không FK cứng — có thể trỏ tới bất kỳ bảng nào) |
-| `action` | text | — | ✓ | enum: `create` / `update` / `delete` / `restore` |
-| `old_value` | jsonb | — | – | Giá trị trước khi đổi |
-| `new_value` | jsonb | — | – | Giá trị sau khi đổi |
+| Cột          | Kiểu  | Khoá           | Bắt buộc | Mô tả                                                                    |
+| ------------ | ----- | -------------- | -------- | ------------------------------------------------------------------------ |
+| `user_id`    | uuid  | FK → `user.id` | ✓        | Ai thao tác                                                              |
+| `table_name` | text  | —              | ✓        | Bảng bị tác động, ví dụ `credit_transaction`                             |
+| `record_id`  | uuid  | —              | ✓        | Id của dòng bị tác động (không FK cứng — có thể trỏ tới bất kỳ bảng nào) |
+| `action`     | text  | —              | ✓        | enum: `create` / `update` / `delete` / `restore`                         |
+| `old_value`  | jsonb | —              | –        | Giá trị trước khi đổi                                                    |
+| `new_value`  | jsonb | —              | –        | Giá trị sau khi đổi                                                      |
 
 ## Ràng buộc & chỉ mục
 
