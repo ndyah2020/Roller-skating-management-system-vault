@@ -16,7 +16,9 @@ Một chỗ duy nhất cho các quy ước dùng chung. Đừng tự chế giá 
 | Vai trò                                                 | `Tên vai trò`              | `HLV`, `Phụ huynh - Học viên`              |
 | Quy tắc (nhóm)                                          | `QT-xx - Tên nhóm quy tắc` | `QT-01 - Lớp và lịch`                      |
 | Quyết định                                              | `QĐ-xx - Tiêu đề ngắn`     | `QĐ-01 - Phụ cấp ca lẻ là số tiền cố định` |
-| Thực thể *(chưa dùng, chờ giai đoạn thiết kế database)* | `Tên thực thể tiếng Việt`  | `Buổi học`                                 |
+| Thực thể | `NN - tên_bảng_tiếng_anh` (NN = số thứ tự ưu tiên đọc, xem [[Sơ đồ dữ liệu]]) | `16 - session` |
+
+Riêng note thực thể: mỗi note vẫn giữ tên tiếng Việt cũ trong frontmatter (`ten`) và trong `aliases`, nên link `[[Tên tiếng Việt cũ]]` viết ở bất kỳ note nào khác vẫn tự trỏ đúng — không cần sửa lại các link đã có.
 
 Bên trong mỗi nhóm quy tắc, từng quy tắc con giữ mã gốc `BR-01`..`BR-32` để tham chiếu khi viết code và viết test — không đổi số.
 

@@ -12,11 +12,11 @@ tags:
 
 > Áp dụng cho: toàn hệ thống — quản lý chủ yếu ở [[HT - Nền tảng và phân quyền]] và [[TC - Tài chính và học phí]]
 
-| Mã | Quy tắc | Áp dụng ở |
-|---|---|---|
-| BR-30 | Mọi thao tác chạm tiền hoặc tài sản ghi `created_by` / `updated_by` kèm thời điểm | Toàn hệ thống |
-| BR-31 | Không xoá cứng, chỉ đánh dấu `is_active = false` | Toàn hệ thống |
-| BR-32 | Kỳ kế toán đã chốt thì khoá, không sửa được số liệu quá khứ | `accounting_period.is_locked` |
+| Mã    | Quy tắc                                                                           | Áp dụng ở                     |
+| ----- | --------------------------------------------------------------------------------- | ----------------------------- |
+| BR-30 | Mọi thao tác chạm tiền hoặc tài sản ghi `created_by` / `updated_by` kèm thời điểm | Toàn hệ thống                 |
+| BR-31 | Không xoá cứng, chỉ đánh dấu `is_active = false`                                  | Toàn hệ thống                 |
+| BR-32 | Kỳ kế toán đã chốt thì khoá, không sửa được số liệu quá khứ                       | `accounting_period.is_locked` |
 
 ## Ba quy tắc xuyên suốt (bối cảnh)
 

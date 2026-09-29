@@ -46,17 +46,20 @@ Vài bảng dùng cặp cột `xxx_type` + `xxx_id` để một cột `id` có t
 
 ```dataview
 TABLE WITHOUT ID
+  so_thu_tu AS "#",
   bang_db AS "Bảng",
   link(file.link, default(ten, file.name)) AS "Thực thể",
   module_chu AS "Module",
   trang_thai AS "Schema"
 FROM #thuc-the AND -"05-Thuc-the-du-lieu/Sơ đồ dữ liệu" AND -"05-Thuc-the-du-lieu/_Bắt đầu ở đây"
-SORT module_chu ASC, bang_db ASC
+SORT so_thu_tu ASC
 ```
+
+Số `#` chính là số thứ tự trong tên file (`NN - tên_bảng_tiếng_anh.md`) — sắp theo module (HT→HV→DH→TC→NS→LG→TS→BH→MK→BC), trong mỗi module bảng gốc (không phụ thuộc bảng khác cùng module) đứng trước, bảng phụ thuộc đứng sau. Đây là thứ tự nên đọc theo khi rà lại toàn bộ schema.
 
 ### HT — Nền tảng và phân quyền (7 bảng)
 
-`user` · `role` · `permission` · `venue` · `venue_time_slot` · `category` · `audit_log`
+`user` · `role` · `permission` · `role_permission` · `venue` · `venue_time_slot` · `audit_log`
 
 ### HV — Học viên và phụ huynh (5 bảng)
 

@@ -19,9 +19,8 @@ Ai đăng nhập được, thấy được gì, và sân nào đang dùng. Mọi
 ## Chức năng chính
 
 - Tài khoản, phiên đăng nhập, đổi và quên mật khẩu
-- Phân quyền theo vai trò: Admin · HLV · Phụ huynh
+- Phân quyền theo vai trò — khởi tạo Admin · HLV · Phụ huynh nhưng có thể thêm vai trò mới sau này (xem [[QĐ-14 - Tách permission thành danh mục quyền và bảng nối role_permission]])
 - Khai báo sân dạy học: tên, địa chỉ, khung giờ dùng được
-- Danh mục dùng chung (trình độ, loại tài sản, nguồn khách, phương thức thanh toán…)
 - Nhật ký thao tác — bắt buộc với mọi thay đổi về tiền và tài sản
 
 ## Màn hình
@@ -46,13 +45,16 @@ Là nền cho toàn bộ P1–P7, không phải chủ của quy trình nào.
 
 *(chỉ tên bảng — schema chi tiết làm ở `05-Thuc-the-du-lieu`)*
 
-`user` · `role` · `permission` · `venue` · `venue_time_slot` · `category` · `audit_log`
+`user` · `role` · `permission` · `role_permission` · `venue` · `venue_time_slot` · `audit_log`
 
 Ghi chú: sân **không** cần cột sức chứa cố định — sức chứa suy ra từ số HLV được phân vào khung giờ đó, xem BR-03 ở [[QT-01 - Lớp và lịch]].
 
 ## Quyết định liên quan
 
-Không có quyết định riêng — theo 3 quy tắc xuyên suốt ở [[QT-06 - Dữ liệu và kế toán]].
+- [[QĐ-13 - Bỏ bảng category, danh mục dùng chung không còn bảng nào dùng]]
+- [[QĐ-14 - Tách permission thành danh mục quyền và bảng nối role_permission]]
+
+Ngoài ra, 3 quy tắc xuyên suốt về ghi vết/không xoá cứng ở [[QT-06 - Dữ liệu và kế toán]] cũng áp dụng, không phải một quyết định riêng.
 
 ## Ghi chú / câu hỏi mở
 

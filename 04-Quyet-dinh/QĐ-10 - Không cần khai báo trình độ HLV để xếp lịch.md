@@ -21,10 +21,10 @@ Khung thiết kế database ban đầu có bảng `staff_teaching_level` (HLV n�
 
 ## Các phương án đã cân nhắc
 
-| Phương án | Ưu | Nhược |
-|---|---|---|
-| A. Giữ `staff_teaching_level`, chặn xếp lịch theo trình độ HLV được phép dạy | Đúng lý thuyết, tránh xếp nhầm HLV chưa đủ trình độ | Thêm bảng, thêm việc khai báo và duy trì dữ liệu cho CLB nhỏ — không khớp cách vận hành thực tế |
-| B. Bỏ hẳn, xếp lịch chỉ dựa vào số lượng học viên | Đơn giản, khớp thực tế — HLV nào cũng dạy được, chỉ cần đủ số lượng theo tỉ lệ 1:4 | Không có lớp chặn nếu sau này CLB phân cấp HLV theo trình độ |
+| Phương án                                                                    | Ưu                                                                                 | Nhược                                                                                           |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| A. Giữ `staff_teaching_level`, chặn xếp lịch theo trình độ HLV được phép dạy | Đúng lý thuyết, tránh xếp nhầm HLV chưa đủ trình độ                                | Thêm bảng, thêm việc khai báo và duy trì dữ liệu cho CLB nhỏ — không khớp cách vận hành thực tế |
+| B. Bỏ hẳn, xếp lịch chỉ dựa vào số lượng học viên                            | Đơn giản, khớp thực tế — HLV nào cũng dạy được, chỉ cần đủ số lượng theo tỉ lệ 1:4 | Không có lớp chặn nếu sau này CLB phân cấp HLV theo trình độ                                    |
 
 ## Quyết định
 
