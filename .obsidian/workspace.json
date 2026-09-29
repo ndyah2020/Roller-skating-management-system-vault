@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "4d598799a87f84de",
+    "type": "split",
+    "children": [
+      {
+        "id": "fab6bd377f6f1e73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29df509a6c7d224b",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e8aa9acd8098c792",
+    "type": "split",
+    "children": [
+      {
+        "id": "7587678d88c6c347",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa55f1a226b3e57f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "876f545bc6216eb2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2c1d0f92095b9791",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 386.5
+  },
+  "right": {
+    "id": "389fef432582dcd6",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4d90515c0325b36",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5d2ac56d402af8a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02-Module/B7 - Điểm danh.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a17cda6de877c666",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02-Module/B7 - Điểm danh.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "9dd0509a8fc24402",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "17ee1cfed3962d31",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d8ce18227d9c95d9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02-Module/B7 - Điểm danh.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "aa55f1a226b3e57f",
+  "lastOpenFiles": [
+    "Roller-skating-management-system-vault/Claude outputs/kien-truc-backend-spring-boot.md",
+    "Roller-skating-management-system-vault/Claude outputs/kien-truc-backend-spring-boot-1.md",
+    "Roller-skating-management-system-vault/Claude outputs/kien-truc-backend-spring-boot-2.md",
+    "Roller-skating-management-system-vault/Claude outputs",
+    "Roller-skating-management-system-vault/99-Nhap/2026-09-14.md",
+    "Roller-skating-management-system-vault/99-Nhap",
+    "Roller-skating-management-system-vault/90-Template/Template vai tro.md",
+    "Roller-skating-management-system-vault/90-Template/Template thuc the.md",
+    "Roller-skating-management-system-vault/90-Template/Template quyet dinh.md",
+    "Roller-skating-management-system-vault/90-Template/Template quy tac.md",
+    "Roller-skating-management-system-vault/90-Template/Template module.md",
+    "Roller-skating-management-system-vault/90-Template/Template chuc nang.md",
+    "Roller-skating-management-system-vault/90-Template",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Tài khoản đăng nhập.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Đợt đặt hàng.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Đợt kiểm kê.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Đơn đặt của khách.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Điểm danh.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Đánh giá HLV.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/_Bắt đầu ở đây.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Sản phẩm.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Tài sản.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Sơ đồ dữ liệu.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Quy tắc tính công.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Trình độ.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Tiến độ bài học của học viên.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Thông báo đã gửi.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Thuê giày theo buổi.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu/Sổ giao–nhận.md",
+    "Roller-skating-management-system-vault/05-Thuc-the-du-lieu",
+    "Roller-skating-management-system-vault/04-Quyet-dinh",
+    "Roller-skating-management-system-vault/03-Quy-tac-nghiep-vu",
+    "Roller-skating-management-system-vault/02-Vai-tro",
+    "Roller-skating-management-system-vault/01-Module",
+    "Roller-skating-management-system-vault/00-Tong-quan",
+    "Roller-skating-management-system-vault/_attachments"
+  ]
+}

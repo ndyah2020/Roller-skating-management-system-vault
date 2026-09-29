@@ -1,0 +1,28 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "ma": "text",
+    "ten": "text",
+    "loai": "text",
+    "nhom": "text",
+    "module": "text",
+    "module_chu": "text",
+    "bang_db": "text",
+    "kieu": "text",
+    "vai_tro": "multitext",
+    "giai_doan": "number",
+    "trang_thai": "text",
+    "uu_tien": "text",
+    "uoc_luong_ngay": "number",
+    "nguoi_lam": "text",
+    "phu_thuoc": "multitext",
+    "pham_vi": "text",
+    "ap_dung_cho": "multitext",
+    "anh_huong": "multitext",
+    "ngay": "date",
+    "xem_lai": "date",
+    "cap_nhat": "date"
+  }
+}
