@@ -35,3 +35,4 @@ Bảng nối nhiều-nhiều: một phụ huynh có thể có nhiều con, một
 ## Ghi chú
 
 - Đã bỏ so với bản cũ: `can_pick_up` (người được phép đón trẻ) — hiện chưa cần.
+- Chỉ dùng cho quan hệ cha/mẹ–con thật. Trường hợp phụ huynh tự đăng ký học cho chính mình dùng cột `guardian_self_id` ở [[Học viên]], không tạo dòng ở đây. Xem [[QĐ-15 - Hoá đơn theo phụ huynh, cho phép phụ huynh tự học]].

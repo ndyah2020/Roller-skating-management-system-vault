@@ -21,17 +21,17 @@ Một dòng = một học viên đăng ký học ở một sân, một khung gi�
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `student_id` | uuid | FK → `student.id` | ✓ | Học viên |
-| `venue_id` | uuid | FK → `venue.id` | ✓ | Sân đăng ký học |
-| `course_id` | uuid | FK → `course.id` | ✓ | Loại hình đăng ký (1-1 / nhóm) |
-| `weekday` | smallint | — | ✓ | Thứ trong tuần |
-| `start_time` | time | — | ✓ | Giờ bắt đầu |
-| `start_date` | date | — | ✓ | Ngày bắt đầu hiệu lực |
-| `end_date` | date | — | – | Ngày kết thúc, để trống nếu còn học |
-| `status` | text | — | ✓ | enum: `active` / `paused` / `ended` |
-| `stop_reason` | text | — | – | Lý do dừng, nếu có |
+| Cột           | Kiểu     | Khoá              | Bắt buộc | Mô tả                               |
+| ------------- | -------- | ----------------- | -------- | ----------------------------------- |
+| `student_id`  | uuid     | FK → `student.id` | ✓        | Học viên                            |
+| `venue_id`    | uuid     | FK → `venue.id`   | ✓        | Sân đăng ký học                     |
+| `course_id`   | uuid     | FK → `course.id`  | ✓        | Loại hình đăng ký (1-1 / nhóm)      |
+| `weekday`     | smallint | —                 | ✓        | Thứ trong tuần                      |
+| `start_time`  | time     | —                 | ✓        | Giờ bắt đầu                         |
+| `start_date`  | date     | —                 | ✓        | Ngày bắt đầu hiệu lực               |
+| `end_date`    | date     | —                 | –        | Ngày kết thúc, để trống nếu còn học |
+| `status`      | text     | —                 | ✓        | enum: `active` / `paused` / `ended` |
+| `stop_reason` | text     | —                 | –        | Lý do dừng, nếu có                  |
 
 ## Ràng buộc & chỉ mục
 
@@ -41,3 +41,4 @@ Một dòng = một học viên đăng ký học ở một sân, một khung gi�
 ## Quy tắc nghiệp vụ áp dụng
 
 - [[QT-01 - Lớp và lịch]] — BR-04: một học viên không được đăng ký hai sân khác nhau trong cùng một ngày. **Khó biểu diễn bằng UNIQUE thuần** (phải so sánh `weekday` giữa các dòng `active` của cùng `student_id` ở `venue_id` khác nhau) — cần kiểm tra ở tầng ứng dụng hoặc trigger, ghi chú lại để không quên khi code.
+- Ngày kết thúc khóa học sẽ tự động gắn vào ngay sau khi hoàn thành buổi học cuối cùng

@@ -21,15 +21,15 @@ Một dòng = một học viên trong một buổi, có/không có mặt. `marke
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `session_id` | uuid | FK → `session.id` | ✓ | Buổi học |
-| `student_id` | uuid | FK → `student.id` | ✓ | Học viên |
-| `status` | text | — | ✓ | enum: `present` / `absent` / `partial` / `not_marked` — mặc định `not_marked` |
-| `marked_by` | uuid | FK → `user.id` | – | HLV bấm tích — null nếu `not_marked`. Từ đây biết ai dạy bé nào (BR-08) |
-| `marked_at` | timestamptz | — | – | Lúc bấm |
-| `client_request_id` | text | — | – | Mã lần gửi do máy sinh — lớp chống bấm trùng khi mạng chập chờn (BR-11) |
-| `note` | text | — | – | Ghi chú, ví dụ học viên vãng lai thêm giữa buổi |
+| Cột                 | Kiểu        | Khoá              | Bắt buộc | Mô tả                                                                         |
+| ------------------- | ----------- | ----------------- | -------- | ----------------------------------------------------------------------------- |
+| `session_id`        | uuid        | FK → `session.id` | ✓        | Buổi học                                                                      |
+| `student_id`        | uuid        | FK → `student.id` | ✓        | Học viên                                                                      |
+| `status`            | text        | —                 | ✓        | enum: `present` / `absent` / `partial` / `not_marked` — mặc định `not_marked` |
+| `marked_by`         | uuid        | FK → `user.id`    | –        | HLV bấm tích — null nếu `not_marked`. Từ đây biết ai dạy bé nào (BR-08)       |
+| `marked_at`         | timestamptz | —                 | –        | Lúc bấm                                                                       |
+| `client_request_id` | text        | —                 | –        | Mã lần gửi do máy sinh — lớp chống bấm trùng khi mạng chập chờn (BR-11)       |
+| `note`              | text        | —                 | –        | Ghi chú, ví dụ học viên vãng lai thêm giữa buổi                               |
 
 ## Ràng buộc & chỉ mục
 

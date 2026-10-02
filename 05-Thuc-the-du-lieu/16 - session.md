@@ -21,16 +21,16 @@ aliases:
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `venue_id` | uuid | FK → `venue.id` | ✓ | Sân diễn ra buổi học |
-| `start_at` | timestamptz | — | ✓ | Giờ bắt đầu |
-| `end_at` | timestamptz | — | ✓ | Giờ kết thúc |
-| `booked_course_id` | uuid | FK → `course.id` | ✓ | Loại hình đã đăng ký |
-| `actual_course_id` | uuid | FK → `course.id` | – | Loại hình **thực tế dạy** — để trống nghĩa là giống `booked_course_id` (BR-17) |
-| `status` | text | — | ✓ | enum: `scheduled` / `done` / `cancelled` / `rescheduled` |
-| `cancel_reason` | text | — | – | enum: `mưa` / `hlv_ban` / `san_ban` / `hoc_vien_bao_nghi` / `khac` — **bắt buộc khi `status = cancelled`** (BR-16) |
-| `note` | text | — | – | Ghi chú |
+| Cột                | Kiểu        | Khoá             | Bắt buộc | Mô tả                                                                                                              |
+| ------------------ | ----------- | ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
+| `venue_id`         | uuid        | FK → `venue.id`  | ✓        | Sân diễn ra buổi học                                                                                               |
+| `start_at`         | timestamptz | —                | ✓        | Giờ bắt đầu                                                                                                        |
+| `end_at`           | timestamptz | —                | ✓        | Giờ kết thúc                                                                                                       |
+| `booked_course_id` | uuid        | FK → `course.id` | ✓        | Loại hình đã đăng ký                                                                                               |
+| `actual_course_id` | uuid        | FK → `course.id` | –        | Loại hình **thực tế dạy** — để trống nghĩa là giống `booked_course_id` (BR-17)                                     |
+| `status`           | text        | —                | ✓        | enum: `scheduled` / `done` / `cancelled` / `rescheduled`                                                           |
+| `cancel_reason`    | text        | —                | –        | enum: `mưa` / `hlv_ban` / `san_ban` / `hoc_vien_bao_nghi` / `khac` — **bắt buộc khi `status = cancelled`** (BR-16) |
+| `note`             | text        | —                | –        | Ghi chú                                                                                                            |
 
 ## Ràng buộc & chỉ mục
 

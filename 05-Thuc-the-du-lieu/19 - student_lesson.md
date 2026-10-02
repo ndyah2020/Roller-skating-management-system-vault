@@ -21,15 +21,15 @@ Một dòng = tình trạng học một bài của một học viên. **Đổi t
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `student_id` | uuid | FK → `student.id` | ✓ | Học viên |
-| `lesson_id` | uuid | FK → `lesson.id` | ✓ | Bài học |
-| `status` | text | — | ✓ | enum: `not_started` / `learning` / `achieved` — mặc định `not_started` |
-| `assessed_at` | timestamptz | — | – | Lúc đánh giá |
-| `assessed_by_staff_id` | uuid | FK → `staff.id` | – | HLV đánh giá |
-| `note` | text | — | – | Nhận xét |
-| `media_url` | text | — | – | Ảnh/video minh chứng |
+| Cột                    | Kiểu        | Khoá              | Bắt buộc | Mô tả                                                                  |
+| ---------------------- | ----------- | ----------------- | -------- | ---------------------------------------------------------------------- |
+| `student_id`           | uuid        | FK → `student.id` | ✓        | Học viên                                                               |
+| `lesson_id`            | uuid        | FK → `lesson.id`  | ✓        | Bài học                                                                |
+| `status`               | text        | —                 | ✓        | enum: `not_started` / `learning` / `achieved` — mặc định `not_started` |
+| `assessed_at`          | timestamptz | —                 | –        | Lúc đánh giá                                                           |
+| `assessed_by_staff_id` | uuid        | FK → `staff.id`   | –        | HLV đánh giá                                                           |
+| `note`                 | text        | —                 | –        | Nhận xét                                                               |
+| `media_url`            | text        | —                 | –        | Ảnh/video minh chứng                                                   |
 
 ## Ràng buộc & chỉ mục
 

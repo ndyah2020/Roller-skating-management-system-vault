@@ -19,7 +19,7 @@ Hồ sơ học viên, phụ huynh/người giám hộ, và ghi danh nơi bắt �
 ## Chức năng chính
 
 - Hồ sơ học viên: ảnh, ngày sinh, size chân, size bảo hộ, bài đang học, trạng thái
-- Hồ sơ phụ huynh; một phụ huynh nhiều con, một học viên nhiều người giám hộ
+- Hồ sơ phụ huynh; một phụ huynh nhiều con, một học viên nhiều người giám hộ. Phụ huynh cũng có thể tự đăng ký học cho chính mình, không chỉ cho con — xem [[Học viên]]
 - Ghi chú y tế và an toàn *(tuỳ chọn)*
 - Ghi danh theo sân và giờ — một học viên học được ở nhiều sân khác nhau, nhưng **không đăng ký hai sân trong cùng một ngày**
 - Thông báo về số buổi còn lại và tiến độ hiện tại
@@ -55,7 +55,7 @@ Hồ sơ học viên, phụ huynh/người giám hộ, và ghi danh nơi bắt �
 
 ## Quyết định liên quan
 
-Không có quyết định riêng mới trong bản này.
+- [[QĐ-15 - Hoá đơn theo phụ huynh, cho phép phụ huynh tự học]]
 
 ## Ghi chú / câu hỏi mở
 

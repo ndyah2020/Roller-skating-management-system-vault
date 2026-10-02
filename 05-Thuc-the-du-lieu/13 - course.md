@@ -21,13 +21,14 @@ Một dòng = một cách dạy: 1-1, nhóm, hoặc nửa 1-1 nửa nhóm. `sess
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `name` | text | — | ✓ | Tên hiển thị |
-| `teaching_mode` | text | — | ✓ | enum: `one_on_one` / `group` / `half_one_on_one_half_group` |
-| `max_student_per_coach` | integer | — | ✓ | 1 nếu 1-1, 4 nếu nhóm (BR-01) |
-| `duration_minutes` | integer | — | ✓ | Mặc định 60 |
-| `description` | text | — | – | Ghi chú |
+| Cột                     | Kiểu    | Khoá | Bắt buộc | Mô tả                                                       |
+| ----------------------- | ------- | ---- | -------- | ----------------------------------------------------------- |
+| `name`                  | text    | —    | ✓        | Tên hiển thị                                                |
+| `teaching_mode`         | text    | —    | ✓        | enum: `one_on_one` / `group` / `half_one_on_one_half_group` |
+| `max_student_per_coach` | integer | —    | ✓        | 1 nếu 1-1, 4 nếu nhóm (BR-01)                               |
+| `duration_minutes`      | integer | —    | ✓        | Mặc định 60                                                 |
+| `description`           | text    | —    | –        | Ghi chú                                                     |
+|                         |         |      |          |                                                             |
 
 ## Ràng buộc & chỉ mục
 

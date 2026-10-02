@@ -21,11 +21,11 @@ Nhóm các bài học ([[Bài học]]) theo thứ tự trình độ, ví dụ "C
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `name` | text | — | ✓ | Tên trình độ |
-| `sort_order` | integer | — | ✓ | Thứ tự từ thấp tới cao |
-| `description` | text | — | – | Ghi chú |
+| Cột           | Kiểu    | Khoá | Bắt buộc | Mô tả                  |
+| ------------- | ------- | ---- | -------- | ---------------------- |
+| `name`        | text    | —    | ✓        | Tên trình độ           |
+| `sort_order`  | integer | —    | ✓        | Thứ tự từ thấp tới cao |
+| `description` | text    | —    | –        | Ghi chú                |
 
 ## Ghi chú
 

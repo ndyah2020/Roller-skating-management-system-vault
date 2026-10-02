@@ -21,11 +21,11 @@ Một buổi có thể có nhiều HLV. **Không** ghi HLV nào kèm bé nào �
 
 ## Cột riêng của bảng
 
-| Cột | Kiểu | Khoá | Bắt buộc | Mô tả |
-|---|---|---|---|---|
-| `session_id` | uuid | FK → `session.id` | ✓ | Buổi học |
-| `staff_id` | uuid | FK → `staff.id` | ✓ | HLV được phân |
-| `role` | text | — | – | enum: `primary` / `assistant` — để trống lúc tạo lịch cũng được (BR-02) |
+| Cột          | Kiểu | Khoá              | Bắt buộc | Mô tả                                                                   |
+| ------------ | ---- | ----------------- | -------- | ----------------------------------------------------------------------- |
+| `session_id` | uuid | FK → `session.id` | ✓        | Buổi học                                                                |
+| `staff_id`   | uuid | FK → `staff.id`   | ✓        | HLV được phân                                                           |
+| `role`       | text | —                 | –        | enum: `primary` / `assistant` — để trống lúc tạo lịch cũng được (BR-02) |
 
 ## Ràng buộc & chỉ mục
 

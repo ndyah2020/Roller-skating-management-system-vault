@@ -20,7 +20,7 @@ Bán gói, thu tiền, công nợ, chi phí và chốt sổ. Gói học của h�
 
 - Bảng giá và gói học: theo buổi · theo khoá · combo
 - Gói của từng học viên với số buổi còn lại
-- Phiếu thu và hoá đơn: tiền mặt · chuyển khoản · QR
+- Phiếu thu và hoá đơn (theo phụ huynh, gộp được nhiều người học trong 1 hoá đơn): tiền mặt · chuyển khoản · QR
 - Công nợ và nhắc đóng học phí
 - Giảm giá, hoàn tiền
 - Thu khác: bán giày, thuê giày (liên kết BH, TS)
@@ -60,6 +60,7 @@ Không có mã S riêng — thao tác thu/chi nằm trong S4, S5 (module HV) và
 
 - [[QĐ-02 - Không tự động trừ buổi, chốt cuối ngày]]
 - [[QĐ-06 - Không có vai trò Kế toán riêng]]
+- [[QĐ-15 - Hoá đơn theo phụ huynh, cho phép phụ huynh tự học]]
 
 ## Ghi chú / câu hỏi mở
 

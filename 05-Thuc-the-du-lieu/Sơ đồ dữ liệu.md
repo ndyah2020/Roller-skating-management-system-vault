@@ -105,6 +105,8 @@ Số `#` chính là số thứ tự trong tên file (`NN - tên_bảng_tiếng_a
 | `attendance.check_in_at` (bản cũ) | **Bỏ**, chỉ giữ `marked_at` | Trùng ý nghĩa với `marked_at`; check-in thật của HLV đã có ở `timesheet.check_in_at` |
 | `staff_review.reviewer_staff_id` (bản cũ) | Đổi thành `reviewer_by` → FK `user.id` | Người đánh giá thường là Admin — Admin không có hồ sơ `staff` |
 | `marked_by`, `confirmed_by`, `received_by`… | Trỏ tới `user.id` (không phải `staff.id`) | Đúng quy ước "cột `_by` trỏ tới người bấm nút = `user.id`" — cần thì join tiếp `user.staff_id` |
+| `invoice.student_id` (bản cũ) | **Bỏ**, chuyển `student_id` xuống `invoice_line`; `invoice.guardian_id` đổi bắt buộc | 1 hoá đơn cần gộp được nhiều người học (phụ huynh đăng ký nhiều con cùng lúc) |
+| Phụ huynh tự học | Thêm `student.guardian_self_id`, tái dùng bảng `student` | Không cần tạo cấu trúc riêng, toàn bộ `enrollment`/`session`/`student_package` không đổi |
 
 ## Câu hỏi mở (đã mang từ phần đặc tả nghiệp vụ qua, cần chốt trước khi code)
 
