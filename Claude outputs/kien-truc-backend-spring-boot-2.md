@@ -1,35 +1,5 @@
 # Kiến trúc & lộ trình học Backend Java Spring Boot — Hệ thống quản lý CLB dạy patin
 
-Tài liệu tra cứu · viết 27/09/2026 · dành cho người đã biết khái niệm backend nói chung (REST API, MVC, database, auth) và core Java OOP, nhưng **chưa từng động vào Spring Boot**
-
-> Đây là tài liệu **kiến trúc & giải thích** — bước "học" trước khi bước "làm". Chưa có dòng code nghiệp vụ nào được viết ra ở đợt này (theo đúng lựa chọn của bạn). Khi bạn đã đọc và nắm được bức tranh tổng thể, buổi làm việc kế tiếp với Claude sẽ bắt đầu viết code thật, đi từng module một, theo đúng lộ trình ở mục 11.
->
-> Tài liệu này giả định bạn đã đọc `ban-do-module.md` và `ke-hoach-phan-tich-he-thong.md` trong project — mọi ví dụ ở đây đều lấy thẳng từ 10 module, 62 bảng và các quy tắc nghiệp vụ (BR-01..32) bạn đã chốt ở đó, không bịa thêm domain mới.
-
----
-
-## Đã thẩm định theo best practice hiện tại (bổ sung 27/09/2026)
-
-Bạn yêu cầu đảm bảo cấu trúc này đúng chuẩn cho một **hệ thống quy mô trung bình** (10 module, 62 bảng, nhiều client, chạy thật dài hạn) — không phải một app CRUD nhỏ, cũng không phải quy mô cần microservices. Đã tra cứu lại các nguồn kiến trúc Spring Boot hiện hành (mục 13) và đối chiếu từng phần. Kết quả:
-
-| Đã có trong bản đầu — **được xác nhận đúng chuẩn, không đổi** | Vì sao |
-|---|---|
-| Package theo module (feature), phân tầng bên trong mỗi module | Đây chính xác là mô hình **"package by feature"** mà giới kiến trúc Spring Boot 2026 đồng thuận cho quy mô trung-lớn, thay vì package theo tầng (chỉ hợp app nhỏ) |
-| Entity/Repository/DTO/Service/Controller tách rõ, Service chứa nghiệp vụ | Đúng layered architecture tiêu chuẩn — hexagonal/clean architecture đầy đủ (ports & adapters) là over-engineering ở quy mô này, chỉ đáng làm khi cần đổi hạ tầng (đổi DB, đổi ORM) mà bạn không có nhu cầu đó |
-| JWT tự viết filter, Postgres + Flyway, JPA convention ở mục 6 | Không có nguồn nào phản đối — vẫn là lựa chọn chuẩn cho một API phục vụ nhiều client |
-
-| Bổ sung mới vào bản này — **vì sao cần** | Xem chi tiết ở |
-|---|---|
-| **Ranh giới module tường minh** bằng Spring Modulith (dự án chính thức của Spring, không phải thư viện ngoài) — cấu trúc package của bạn đã sẵn tương thích, chỉ cần thêm 1 dependency + 1 test khi đủ 2-3 module | Mục 4.6 |
-| **Idempotency key** hiện thực cụ thể bằng cột `client_request_id` chính bạn đã quyết định thêm vào `attendance` | Mục 5.1 |
-| **`ProblemDetail` (chuẩn RFC 9457)** thay cho `ApiError` tự chế — Spring có sẵn, ít code hơn, đúng chuẩn ngành hiện nay cho lỗi REST API | Mục 8.2 (đã sửa) |
-| **Phân trang, versioning theo path, tài liệu OpenAPI** — thiếu ở bản đầu, cần thiết vì danh sách học viên/buổi học/điểm danh sẽ tăng dần và có nhiều client cùng gọi API | Mục 8.4 |
-| **CI cơ bản** (build + test tự động mỗi lần đẩy code) — best practice tối thiểu cho bất kỳ hệ thống nào "chạy thật" | Mục 10.4 |
-
-Không có gì ở bản đầu bị coi là *sai* — phần bổ sung này là hoàn thiện thêm cho đúng độ "vừa đủ" của một hệ thống trung bình, không phải sửa lỗi kiến trúc.
-
----
-
 ## Mục lục
 
 1. [Bức tranh tổng thể: Spring / Spring Boot là gì](#1)
@@ -47,7 +17,6 @@ Không có gì ở bản đầu bị coi là *sai* — phần bổ sung này là
 13. [Nguồn tham khảo phiên bản](#13)
 
 ---
-
 <a id="1"></a>
 
 ## 1. Bức tranh tổng thể: Spring / Spring Boot là gì
